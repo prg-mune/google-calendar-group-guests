@@ -48,3 +48,7 @@ Google Calendar の予定作成/編集画面で、事前登録したメンバー
 ## Apps Script 版について
 
 `Code.js` と `appsscript.json` は Google Workspace Add-on 版の試作用ファイルです。Chrome 拡張として使う場合は、`manifest.json`、`popup.html`、`popup.css`、`popup.js`、`content.js`、`content.css` を使います。
+
+## License
+
+MIT
