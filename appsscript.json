@@ -1,0 +1,28 @@
+{
+  "timeZone": "Asia/Tokyo",
+  "runtimeVersion": "V8",
+  "exceptionLogging": "STACKDRIVER",
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/calendar.addons.execute",
+    "https://www.googleapis.com/auth/calendar.addons.current.event.write"
+  ],
+  "addOns": {
+    "common": {
+      "name": "Calendar Group Guests",
+      "logoUrl": "https://www.gstatic.com/images/branding/product/1x/calendar_2020q4_48dp.png",
+      "layoutProperties": {
+        "primaryColor": "#1a73e8"
+      }
+    },
+    "calendar": {
+      "homepageTrigger": {
+        "runFunction": "onHomepage",
+        "enabled": true
+      },
+      "eventOpenTrigger": {
+        "runFunction": "onCalendarEventOpen"
+      },
+      "currentEventAccess": "WRITE"
+    }
+  }
+}
